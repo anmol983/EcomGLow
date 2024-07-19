@@ -1,4 +1,4 @@
-# Amazon Clone App
+# EcomGlow
 
 This repository hosts the development of an Amazon clone application built using Flutter, Dart, Node.js, Express.js, and MongoDB. The application includes both client and seller sites, catering to their specific needs and roles.
 
@@ -21,16 +21,3 @@ This repository hosts the development of an Amazon clone application built using
 - **MongoDB**: Database management.
 - **Cloudinary**: Image storage and management.
 
-## Getting Started
-
-To run the application locally:
-
-1. Clone the repository.
-2. Install dependencies for frontend and backend.
-3. Set up Cloudinary credentials.
-4. Run the backend server.
-5. Launch the Flutter application.
-
-## Contribution Guidelines
-
-Contributions are welcome! Please submit pull requests for bug fixes, feature enhancements, or documentation improvements.
