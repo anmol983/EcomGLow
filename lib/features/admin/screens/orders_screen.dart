@@ -50,9 +50,11 @@ class _OrdersScreenState extends State<OrdersScreen> {
                 },
                 child: SizedBox(
                   height: 140,
-                  child: SingleProduct(
-                    image: orderData.products[0].images[0],
-                  ),
+                  child: orderData.products.isNotEmpty
+                      ? SingleProduct(
+                          image: orderData.products[0].images[0],
+                        )
+                      : const Placeholder(), // Placeholder for empty product list
                 ),
               );
             },

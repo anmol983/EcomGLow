@@ -1,3 +1,5 @@
+import 'package:amazon/features/account/services/account_services.dart';
+import 'package:amazon/features/account/widgets/account_button.dart';
 import 'package:amazon/features/admin/screens/orders_screen.dart';
 import 'package:amazon/features/admin/screens/post_screen.dart';
 import 'package:flutter/material.dart';
@@ -5,6 +7,8 @@ import 'package:flutter/material.dart';
 import '../../../../constants/global_variables.dart';
 
 class AdminScreen extends StatefulWidget {
+  static const String routeName = '/admin-screen';
+
   const AdminScreen({Key? key}) : super(key: key);
 
   @override
@@ -56,6 +60,10 @@ class _AdminScreenState extends State<AdminScreen> {
                   color: Colors.black,
                   fontWeight: FontWeight.bold,
                 ),
+              ),
+              AccountButton(
+                text: 'Log Out',
+                onTap: () => AccountServices().logOut(context),
               )
             ],
           ),

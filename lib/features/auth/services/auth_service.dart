@@ -1,9 +1,11 @@
 // ignore_for_file: use_build_context_synchronously
 
 import 'dart:convert';
+import 'dart:developer';
 
 import 'package:amazon/common/widgets/bottom_bar.dart';
 import 'package:amazon/constants/global_variables.dart';
+import 'package:amazon/features/admin/screens/admin_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -81,11 +83,17 @@ class AuthService {
           SharedPreferences prefs = await SharedPreferences.getInstance();
           Provider.of<UserProvider>(context, listen: false).setUser(res.body);
           await prefs.setString('x-auth-token', jsonDecode(res.body)['token']);
-          Navigator.pushNamedAndRemoveUntil(
-            context,
-            BottomBar.routeName,
-            (route) => false,
-          );
+          json.decode(res.body)["type"] == "admin"
+              ? Navigator.pushNamedAndRemoveUntil(
+                  context,
+                  AdminScreen.routeName,
+                  (route) => false,
+                )
+              : Navigator.pushNamedAndRemoveUntil(
+                  context,
+                  BottomBar.routeName,
+                  (route) => false,
+                );
         },
       );
     } catch (e) {

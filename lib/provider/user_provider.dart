@@ -15,6 +15,19 @@ class UserProvider extends ChangeNotifier {
 
   User get user => _user;
 
+  void resetUser() {
+    _user = User(
+      id: '',
+      name: '',
+      email: '',
+      password: '',
+      address: '',
+      type: '',
+      token: '',
+      cart: [],
+    );
+  }
+
   void setUser(String user) {
     _user = User.fromJson(user);
     notifyListeners();
