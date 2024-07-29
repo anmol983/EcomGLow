@@ -1,7 +1,7 @@
 import 'package:amazon/constants/global_variables.dart';
 import 'package:amazon/features/account/widgets/orders.dart';
 import 'package:flutter/material.dart';
-
+import 'package:lottie/lottie.dart';
 import '../widgets/below_app_bar.dart';
 import '../widgets/top_buttons.dart';
 
@@ -24,25 +24,14 @@ class AccountScreen extends StatelessWidget {
             children: [
               Container(
                 alignment: Alignment.topLeft,
-                child: Image.asset(
-                  'assets/images/amazon_in.png',
-                  width: 120,
-                  height: 45,
-                  color: Colors.black,
+                child: Lottie.asset(
+                  'animations/shop.json', // Replace with your Lottie animation file path
+                  width: 200,
+                  height: 200,
+                  fit: BoxFit
+                      .contain, // Adjust this based on your animation's requirements
                 ),
               ),
-              Container(
-                padding: const EdgeInsets.only(left: 15, right: 15),
-                child: const Row(
-                  children: [
-                    Padding(
-                      padding: EdgeInsets.only(right: 15),
-                      child: Icon(Icons.notifications_outlined),
-                    ),
-                    Icon(Icons.search),
-                  ],
-                ),
-              )
             ],
           ),
         ),
@@ -51,11 +40,14 @@ class AccountScreen extends StatelessWidget {
         children: [
           BelowAppBar(),
           SizedBox(height: 10),
-          TopButtons(),
           SizedBox(
             height: 20,
           ),
           Orders(),
+          SizedBox(
+            height: 300,
+          ),
+          TopButtons(),
         ],
       ),
     );

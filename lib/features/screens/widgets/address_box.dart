@@ -10,44 +10,51 @@ class AddressBox extends StatelessWidget {
   Widget build(BuildContext context) {
     final user = Provider.of<UserProvider>(context).user;
     return Container(
-      height: 40,
-      decoration: const BoxDecoration(
+      height: 50,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(10),
         gradient: LinearGradient(
           colors: [
-            Color.fromARGB(255, 114, 226, 221),
-            Color.fromARGB(255, 162, 236, 233),
+            Color.fromARGB(255, 4, 10, 4), // Sky Blue
+            Color.fromARGB(255, 64, 120, 80), // Deep Sky Blue
           ],
-          stops: [0.5, 1.0],
+          stops: [0.0, 1.0],
         ),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.2),
+            blurRadius: 8,
+            offset: Offset(0, 4),
+          ),
+        ],
       ),
-      padding: const EdgeInsets.only(left: 10),
+      padding: const EdgeInsets.symmetric(horizontal: 10),
       child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           const Icon(
             Icons.location_on_outlined,
-            size: 20,
+            size: 24,
+            color: Colors.white,
           ),
           Expanded(
             child: Padding(
-              padding: const EdgeInsets.only(left: 5),
+              padding: const EdgeInsets.only(left: 8),
               child: Text(
                 'Delivery to ${user.name} - ${user.address}',
                 style: const TextStyle(
-                  fontWeight: FontWeight.w500,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 16,
+                  color: Colors.white,
                 ),
                 overflow: TextOverflow.ellipsis,
               ),
             ),
           ),
-          const Padding(
-            padding: EdgeInsets.only(
-              left: 5,
-              top: 2,
-            ),
-            child: Icon(
-              Icons.arrow_drop_down_outlined,
-              size: 18,
-            ),
+          const Icon(
+            Icons.arrow_drop_down_outlined,
+            size: 24,
+            color: Colors.white,
           ),
         ],
       ),

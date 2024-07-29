@@ -79,6 +79,7 @@ Route<dynamic> generateRoute(RouteSettings routeSettings) {
       // var order = routeSettings.arguments as Order;
       return MaterialPageRoute(
         settings: routeSettings,
+        // ignore: prefer_const_constructors
         builder: (_) => AdminScreen(),
       );
     default:

@@ -18,8 +18,8 @@ class BottomBar extends StatefulWidget {
 
 class _BottomBarState extends State<BottomBar> {
   int _page = 0;
-  double bottomBarwidth = 42;
-  double bottomBarBorderwidth = 5;
+  double bottomBarWidth = 42;
+  double bottomBarBorderWidth = 5;
 
   List<Widget> pages = [
     const HomeScreen(),
@@ -39,80 +39,153 @@ class _BottomBarState extends State<BottomBar> {
 
     return Scaffold(
       body: pages[_page],
-      bottomNavigationBar: BottomNavigationBar(
-        currentIndex: _page,
-        selectedItemColor: GlobalVariables.selectedNavBarColor,
-        unselectedItemColor: GlobalVariables.unselectedNavBarColor,
-        backgroundColor: GlobalVariables.backgroundColor,
-        iconSize: 28,
-        onTap: updatePage,
-        items: [
-          // HOME
-          BottomNavigationBarItem(
-            icon: Container(
-              width: bottomBarwidth,
-              decoration: BoxDecoration(
-                border: Border(
-                  top: BorderSide(
-                    color: _page == 0
-                        ? GlobalVariables.selectedNavBarColor
-                        : GlobalVariables.backgroundColor,
-                    width: bottomBarBorderwidth,
-                  ),
+      bottomNavigationBar: Container(
+        color:
+            Colors.black, // Set bottom navigation bar background color to black
+        child: BottomNavigationBar(
+          currentIndex: _page,
+          selectedItemColor:
+              Colors.white, // Set selected item color to white for contrast
+          unselectedItemColor: Colors.grey[400], // Set unselected item color
+          backgroundColor: Colors.black, // Ensure the background is black
+          iconSize: 28,
+          elevation: 0, // Remove default elevation
+          type: BottomNavigationBarType.fixed,
+          onTap: updatePage,
+          items: [
+            // HOME
+            BottomNavigationBarItem(
+              icon: Container(
+                width: bottomBarWidth,
+                height: 50, // Adjust height if necessary
+                child: Stack(
+                  clipBehavior: Clip.none,
+                  children: [
+                    Center(
+                      child: AnimatedOpacity(
+                        opacity: _page == 0 ? 1.0 : 0.7,
+                        duration: const Duration(milliseconds: 300),
+                        child: const Icon(
+                          Icons.home_outlined,
+                          size: 30,
+                        ),
+                      ),
+                    ),
+                    if (_page == 0)
+                      Positioned(
+                        bottom: -5,
+                        child: Container(
+                          width: bottomBarWidth,
+                          alignment: Alignment.center,
+                          child: Text(
+                            'HOME',
+                            style: TextStyle(
+                              fontSize: 12,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white, // Set text color to white
+                            ),
+                          ),
+                        ),
+                      ),
+                  ],
                 ),
               ),
-              child: const Icon(
-                Icons.home_outlined,
-              ),
+              label: '',
             ),
-            label: '',
-          ),
-          // ACCOUNT
-          BottomNavigationBarItem(
-            icon: Container(
-              width: bottomBarwidth,
-              decoration: BoxDecoration(
-                border: Border(
-                  top: BorderSide(
-                    color: _page == 1
-                        ? GlobalVariables.selectedNavBarColor
-                        : GlobalVariables.backgroundColor,
-                    width: bottomBarBorderwidth,
-                  ),
+            // ACCOUNT
+            BottomNavigationBarItem(
+              icon: Container(
+                width: bottomBarWidth,
+                height: 50,
+                child: Stack(
+                  clipBehavior: Clip.none,
+                  children: [
+                    Center(
+                      child: AnimatedOpacity(
+                        opacity: _page == 1 ? 1.0 : 0.7,
+                        duration: const Duration(milliseconds: 300),
+                        child: const Icon(
+                          Icons.person_outline_outlined,
+                          size: 30,
+                        ),
+                      ),
+                    ),
+                    if (_page == 1)
+                      Positioned(
+                        bottom: -5,
+                        child: Container(
+                          width: bottomBarWidth,
+                          alignment: Alignment.center,
+                          child: Text(
+                            'MY ACCOUNT',
+                            style: TextStyle(
+                              fontSize: 12,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                      ),
+                  ],
                 ),
               ),
-              child: const Icon(
-                Icons.person_outline_outlined,
-              ),
+              label: '',
             ),
-            label: '',
-          ),
-          // CART
-          BottomNavigationBarItem(
-            icon: Container(
-              width: bottomBarwidth,
-              decoration: BoxDecoration(
-                border: Border(
-                  top: BorderSide(
-                    color: _page == 2
-                        ? GlobalVariables.selectedNavBarColor
-                        : GlobalVariables.backgroundColor,
-                    width: bottomBarBorderwidth,
-                  ),
+            // CART
+            BottomNavigationBarItem(
+              icon: Container(
+                width: bottomBarWidth,
+                height: 50,
+                child: Stack(
+                  clipBehavior: Clip.none,
+                  children: [
+                    Center(
+                      child: AnimatedOpacity(
+                        opacity: _page == 2 ? 1.0 : 0.7,
+                        duration: const Duration(milliseconds: 300),
+                        child: badges.Badge(
+                          badgeContent: Text(
+                            userCartLen.toString(),
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          badgeStyle: badges.BadgeStyle(
+                            elevation: 0,
+                            badgeColor: Colors.white,
+                            borderRadius: BorderRadius.circular(12),
+                          ),
+                          child: const Icon(
+                            Icons.shopping_cart_outlined,
+                            size: 30,
+                          ),
+                        ),
+                      ),
+                    ),
+                    if (_page == 2)
+                      Positioned(
+                        bottom: -5,
+                        child: Container(
+                          width: bottomBarWidth,
+                          alignment: Alignment.center,
+                          child: Text(
+                            'Cart',
+                            style: TextStyle(
+                              fontSize: 12,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                      ),
+                  ],
                 ),
               ),
-              child: badges.Badge(
-                badgeContent: Text(userCartLen.toString()),
-                badgeStyle: const badges.BadgeStyle(
-                  elevation: 0,
-                  badgeColor: Colors.white,
-                ),
-                child: const Icon(Icons.shopping_cart_outlined),
-              ),
+              label: '',
             ),
-            label: '',
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
