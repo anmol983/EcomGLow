@@ -1,5 +1,5 @@
-import 'package:amazon/common/widgets/stars.dart';
-import 'package:amazon/models/product.dart';
+import 'package:EcomGlow/common/widgets/stars.dart';
+import 'package:EcomGlow/models/product.dart';
 import 'package:flutter/material.dart';
 
 class SearchedProduct extends StatelessWidget {

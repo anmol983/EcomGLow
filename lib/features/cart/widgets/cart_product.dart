@@ -1,5 +1,5 @@
-import 'package:amazon/features/cart/screens/services/cart_services.dart';
-import 'package:amazon/features/product_details/screens/services/product_details_services.dart';
+import 'package:EcomGlow/features/cart/screens/services/cart_services.dart';
+import 'package:EcomGlow/features/product_details/screens/services/product_details_services.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

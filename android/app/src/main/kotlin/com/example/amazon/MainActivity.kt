@@ -1,4 +1,4 @@
-package com.example.amazon
+package com.example.EcomGlow
 
 import io.flutter.embedding.android.FlutterActivity
 

@@ -1,7 +1,7 @@
 import 'dart:io';
 
-import 'package:amazon/common/widgets/custom_textfield.dart';
-import 'package:amazon/constants/utils.dart';
+import 'package:EcomGlow/common/widgets/custom_textfield.dart';
+import 'package:EcomGlow/constants/utils.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';

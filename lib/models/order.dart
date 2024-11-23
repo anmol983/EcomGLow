@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:amazon/models/product.dart';
+import 'package:EcomGlow/models/product.dart';
 
 class Order {
   final String id;

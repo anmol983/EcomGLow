@@ -1,7 +1,7 @@
-import 'package:amazon/features/account/services/account_services.dart';
-import 'package:amazon/features/account/widgets/account_button.dart';
-import 'package:amazon/features/admin/screens/orders_screen.dart';
-import 'package:amazon/features/admin/screens/post_screen.dart';
+import 'package:EcomGlow/features/account/services/account_services.dart';
+import 'package:EcomGlow/features/account/widgets/account_button.dart';
+import 'package:EcomGlow/features/admin/screens/orders_screen.dart';
+import 'package:EcomGlow/features/admin/screens/post_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../constants/global_variables.dart';
@@ -48,7 +48,7 @@ class _AdminScreenState extends State<AdminScreen> {
               Container(
                 alignment: Alignment.topLeft,
                 child: Image.asset(
-                  'assets/images/amazon_in.png',
+                  'assets/images/EcomGlow_in.png',
                   width: 120,
                   height: 45,
                   color: Colors.black,

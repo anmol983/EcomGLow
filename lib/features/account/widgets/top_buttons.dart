@@ -1,5 +1,5 @@
-import 'package:amazon/features/account/services/account_services.dart';
-import 'package:amazon/features/account/widgets/account_button.dart';
+import 'package:EcomGlow/features/account/services/account_services.dart';
+import 'package:EcomGlow/features/account/widgets/account_button.dart';
 import 'package:flutter/material.dart';
 
 class TopButtons extends StatelessWidget {

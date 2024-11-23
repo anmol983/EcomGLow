@@ -1,6 +1,6 @@
-import 'package:amazon/constants/global_variables.dart';
-import 'package:amazon/features/cart/screens/cart_screen.dart';
-import 'package:amazon/provider/user_provider.dart';
+import 'package:EcomGlow/constants/global_variables.dart';
+import 'package:EcomGlow/features/cart/screens/cart_screen.dart';
+import 'package:EcomGlow/provider/user_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:badges/badges.dart' as badges;
@@ -44,6 +44,7 @@ class _BottomBarState extends State<BottomBar> {
             Colors.black, // Set bottom navigation bar background color to black
         child: BottomNavigationBar(
           currentIndex: _page,
+
           selectedItemColor:
               Colors.white, // Set selected item color to white for contrast
           unselectedItemColor: Colors.grey[400], // Set unselected item color
@@ -52,6 +53,7 @@ class _BottomBarState extends State<BottomBar> {
           elevation: 0, // Remove default elevation
           type: BottomNavigationBarType.fixed,
           onTap: updatePage,
+
           items: [
             // HOME
             BottomNavigationBarItem(

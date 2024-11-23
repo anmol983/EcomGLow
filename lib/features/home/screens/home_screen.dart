@@ -1,5 +1,5 @@
-import 'package:amazon/features/screens/widgets/top_categories.dart';
-import 'package:amazon/features/search/screens/search_screen.dart';
+import 'package:EcomGlow/features/screens/widgets/top_categories.dart';
+import 'package:EcomGlow/features/search/screens/search_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../../../constants/global_variables.dart';

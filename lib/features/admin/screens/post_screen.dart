@@ -1,7 +1,7 @@
 // ignore_for_file: sort_child_properties_last
 
-import 'package:amazon/common/widgets/loader.dart';
-import 'package:amazon/models/product.dart';
+import 'package:EcomGlow/common/widgets/loader.dart';
+import 'package:EcomGlow/models/product.dart';
 import 'package:flutter/material.dart';
 
 import '../../account/widgets/single_product.dart';

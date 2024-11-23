@@ -1,5 +1,5 @@
-import 'package:amazon/constants/global_variables.dart';
-import 'package:amazon/features/account/widgets/orders.dart';
+import 'package:EcomGlow/constants/global_variables.dart';
+import 'package:EcomGlow/features/account/widgets/orders.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 import '../widgets/below_app_bar.dart';

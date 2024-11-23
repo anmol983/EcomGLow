@@ -1,17 +1,15 @@
-// ignore_for_file: unused_import
-
-import 'package:amazon/common/widgets/bottom_bar.dart';
-import 'package:amazon/features/address/screens/address_screen.dart';
-import 'package:amazon/features/admin/screens/add_product_screen.dart';
-import 'package:amazon/features/admin/screens/admin_screen.dart';
-import 'package:amazon/features/auth/screens/auth_screen.dart';
-import 'package:amazon/features/home/screens/category_deals_screen.dart';
-import 'package:amazon/features/home/screens/home_screen.dart';
-import 'package:amazon/features/order_details/screens/order_details.dart';
-import 'package:amazon/features/product_details/screens/product_details_screen.dart';
-import 'package:amazon/features/search/screens/search_screen.dart';
-import 'package:amazon/models/order.dart';
-import 'package:amazon/models/product.dart';
+import 'package:EcomGlow/common/widgets/bottom_bar.dart';
+import 'package:EcomGlow/features/address/screens/address_screen.dart';
+import 'package:EcomGlow/features/admin/screens/add_product_screen.dart';
+import 'package:EcomGlow/features/admin/screens/admin_screen.dart';
+import 'package:EcomGlow/features/auth/screens/auth_screen.dart';
+import 'package:EcomGlow/features/home/screens/category_deals_screen.dart';
+import 'package:EcomGlow/features/home/screens/home_screen.dart';
+import 'package:EcomGlow/features/order_details/screens/order_details.dart';
+import 'package:EcomGlow/features/product_details/screens/product_details_screen.dart';
+import 'package:EcomGlow/features/search/screens/search_screen.dart';
+import 'package:EcomGlow/models/order.dart';
+import 'package:EcomGlow/models/product.dart';
 import 'package:flutter/material.dart';
 
 Route<dynamic> generateRoute(RouteSettings routeSettings) {

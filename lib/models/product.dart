@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:amazon/models/rating.dart';
+import 'package:EcomGlow/models/rating.dart';
 
 class Product {
   final String name;

@@ -1,8 +1,8 @@
-import 'package:amazon/common/widgets/loader.dart';
-import 'package:amazon/constants/global_variables.dart';
-import 'package:amazon/features/product_details/screens/product_details_screen.dart';
+import 'package:EcomGlow/common/widgets/loader.dart';
+import 'package:EcomGlow/constants/global_variables.dart';
+import 'package:EcomGlow/features/product_details/screens/product_details_screen.dart';
 
-import 'package:amazon/models/product.dart';
+import 'package:EcomGlow/models/product.dart';
 import 'package:flutter/material.dart';
 
 import '../service/home_services.dart';

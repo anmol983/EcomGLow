@@ -1,6 +1,6 @@
 # EcomGlow
 
-This repository hosts the development of an Amazon clone application built using Flutter, Dart, Node.js, Express.js, and MongoDB. The application includes both client and seller sites, catering to their specific needs and roles.
+This repository hosts the development of an EcomGlow clone application built using Flutter, Dart, Node.js, Express.js, and MongoDB. The application includes both client and seller sites, catering to their specific needs and roles.
 
 ## Features
 

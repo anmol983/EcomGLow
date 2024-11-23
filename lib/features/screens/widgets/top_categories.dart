@@ -1,5 +1,5 @@
-import 'package:amazon/constants/global_variables.dart';
-import 'package:amazon/features/home/screens/category_deals_screen.dart';
+import 'package:EcomGlow/constants/global_variables.dart';
+import 'package:EcomGlow/features/home/screens/category_deals_screen.dart';
 import 'package:flutter/material.dart';
 
 class TopCategories extends StatelessWidget {

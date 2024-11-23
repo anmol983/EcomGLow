@@ -1,11 +1,11 @@
 // ignore_for_file: unused_element, no_leading_underscores_for_local_identifiers, deprecated_member_use, unused_field, avoid_print
-import 'package:amazon/constants/utils.dart';
-import 'package:amazon/features/address/services/address_services.dart';
-import 'package:amazon/provider/user_provider.dart';
+import 'package:EcomGlow/constants/utils.dart';
+import 'package:EcomGlow/features/address/services/address_services.dart';
+import 'package:EcomGlow/provider/user_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:pay/pay.dart';
-import 'package:amazon/common/widgets/custom_textfield.dart';
-import 'package:amazon/constants/global_variables.dart';
+import 'package:EcomGlow/common/widgets/custom_textfield.dart';
+import 'package:EcomGlow/constants/global_variables.dart';
 import 'package:provider/provider.dart';
 
 class AddressScreen extends StatefulWidget {

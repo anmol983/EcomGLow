@@ -1,7 +1,7 @@
-import 'package:amazon/common/widgets/loader.dart';
-import 'package:amazon/features/home/service/home_services.dart';
-import 'package:amazon/features/product_details/screens/product_details_screen.dart';
-import 'package:amazon/models/product.dart';
+import 'package:EcomGlow/common/widgets/loader.dart';
+import 'package:EcomGlow/features/home/service/home_services.dart';
+import 'package:EcomGlow/features/product_details/screens/product_details_screen.dart';
+import 'package:EcomGlow/models/product.dart';
 import 'package:flutter/material.dart';
 
 class DealOfDay extends StatefulWidget {

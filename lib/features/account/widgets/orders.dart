@@ -1,8 +1,8 @@
-import 'package:amazon/common/widgets/loader.dart';
-import 'package:amazon/constants/global_variables.dart';
-import 'package:amazon/features/account/services/account_services.dart';
-import 'package:amazon/features/account/widgets/single_product.dart';
-import 'package:amazon/features/order_details/screens/order_details.dart';
+import 'package:EcomGlow/common/widgets/loader.dart';
+import 'package:EcomGlow/constants/global_variables.dart';
+import 'package:EcomGlow/features/account/services/account_services.dart';
+import 'package:EcomGlow/features/account/widgets/single_product.dart';
+import 'package:EcomGlow/features/order_details/screens/order_details.dart';
 import 'package:flutter/material.dart';
 
 import '../../../models/order.dart';

@@ -1,8 +1,8 @@
-import 'package:amazon/common/widgets/custom_button.dart';
-import 'package:amazon/features/address/screens/address_screen.dart';
-import 'package:amazon/features/cart/widgets/cart_product.dart';
-import 'package:amazon/features/cart/widgets/cart_subtotal.dart';
-import 'package:amazon/features/screens/widgets/address_box.dart';
+import 'package:EcomGlow/common/widgets/custom_button.dart';
+import 'package:EcomGlow/features/address/screens/address_screen.dart';
+import 'package:EcomGlow/features/cart/widgets/cart_product.dart';
+import 'package:EcomGlow/features/cart/widgets/cart_subtotal.dart';
+import 'package:EcomGlow/features/screens/widgets/address_box.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

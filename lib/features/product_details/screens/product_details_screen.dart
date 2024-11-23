@@ -1,8 +1,8 @@
 // ignore_for_file: unused_local_variable
 
-import 'package:amazon/common/widgets/custom_button.dart';
-import 'package:amazon/common/widgets/stars.dart';
-import 'package:amazon/features/product_details/screens/services/product_details_services.dart';
+import 'package:EcomGlow/common/widgets/custom_button.dart';
+import 'package:EcomGlow/common/widgets/stars.dart';
+import 'package:EcomGlow/features/product_details/screens/services/product_details_services.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
@@ -109,7 +109,7 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
                               borderSide:
                                   BorderSide(color: Colors.black38, width: 1),
                             ),
-                            hintText: 'Search Amazon.in',
+                            hintText: 'Search EcomGlow.in',
                             hintStyle: const TextStyle(
                               fontWeight: FontWeight.w500,
                               fontSize: 17,

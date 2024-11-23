@@ -1,7 +1,7 @@
 // ignore_for_file: unused_local_variable
 
-import 'package:amazon/constants/global_variables.dart';
-import 'package:amazon/provider/user_provider.dart';
+import 'package:EcomGlow/constants/global_variables.dart';
+import 'package:EcomGlow/provider/user_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

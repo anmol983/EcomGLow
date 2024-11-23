@@ -3,11 +3,11 @@
 import 'dart:convert';
 import 'dart:io';
 
-import 'package:amazon/constants/error_handling.dart';
-import 'package:amazon/constants/utils.dart';
-import 'package:amazon/features/admin/models/sales.dart';
-import 'package:amazon/models/order.dart';
-import 'package:amazon/models/product.dart';
+import 'package:EcomGlow/constants/error_handling.dart';
+import 'package:EcomGlow/constants/utils.dart';
+import 'package:EcomGlow/features/admin/models/sales.dart';
+import 'package:EcomGlow/models/order.dart';
+import 'package:EcomGlow/models/product.dart';
 import 'package:cloudinary_public/cloudinary_public.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;

@@ -1,8 +1,8 @@
 // ignore_for_file: unused_element
 
-import 'package:amazon/features/account/widgets/single_product.dart';
-import 'package:amazon/features/admin/services/admin_service.dart';
-import 'package:amazon/features/order_details/screens/order_details.dart';
+import 'package:EcomGlow/features/account/widgets/single_product.dart';
+import 'package:EcomGlow/features/admin/services/admin_service.dart';
+import 'package:EcomGlow/features/order_details/screens/order_details.dart';
 import 'package:flutter/material.dart';
 
 import '../../../common/widgets/loader.dart';

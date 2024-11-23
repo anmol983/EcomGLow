@@ -1,10 +1,10 @@
 // ignore_for_file: use_build_context_synchronously
 
 import 'dart:convert';
-import 'package:amazon/constants/error_handling.dart';
-import 'package:amazon/constants/global_variables.dart';
-import 'package:amazon/constants/utils.dart';
-import 'package:amazon/features/auth/screens/auth_screen.dart';
+import 'package:EcomGlow/constants/error_handling.dart';
+import 'package:EcomGlow/constants/global_variables.dart';
+import 'package:EcomGlow/constants/utils.dart';
+import 'package:EcomGlow/features/auth/screens/auth_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:http/http.dart' as http;

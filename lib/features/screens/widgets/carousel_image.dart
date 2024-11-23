@@ -1,4 +1,4 @@
-import 'package:amazon/constants/global_variables.dart';
+import 'package:EcomGlow/constants/global_variables.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 

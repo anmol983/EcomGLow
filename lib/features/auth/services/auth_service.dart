@@ -3,9 +3,9 @@
 import 'dart:convert';
 import 'dart:developer';
 
-import 'package:amazon/common/widgets/bottom_bar.dart';
-import 'package:amazon/constants/global_variables.dart';
-import 'package:amazon/features/admin/screens/admin_screen.dart';
+import 'package:EcomGlow/common/widgets/bottom_bar.dart';
+import 'package:EcomGlow/constants/global_variables.dart';
+import 'package:EcomGlow/features/admin/screens/admin_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -44,7 +44,6 @@ class AuthService {
           'Content-Type': 'application/json; charset=UTF-8',
         },
       );
-
       httpErrorHandle(
         response: res,
         context: context,

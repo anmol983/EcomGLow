@@ -1,7 +1,7 @@
-import 'package:amazon/common/widgets/custom_button.dart';
-import 'package:amazon/features/admin/services/admin_service.dart';
-import 'package:amazon/models/order.dart';
-import 'package:amazon/provider/user_provider.dart';
+import 'package:EcomGlow/common/widgets/custom_button.dart';
+import 'package:EcomGlow/features/admin/services/admin_service.dart';
+import 'package:EcomGlow/models/order.dart';
+import 'package:EcomGlow/provider/user_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
@@ -98,7 +98,7 @@ class _OrderDetailsScreenState extends State<OrderDetailsScreen> {
                           borderSide:
                               BorderSide(color: Colors.black38, width: 1),
                         ),
-                        hintText: 'Search Amazon.in',
+                        hintText: 'Search EcomGlow.in',
                         hintStyle: const TextStyle(
                           fontWeight: FontWeight.w500,
                           fontSize: 17,

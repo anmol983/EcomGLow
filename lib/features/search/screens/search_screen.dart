@@ -1,8 +1,8 @@
-import 'package:amazon/common/widgets/loader.dart';
-import 'package:amazon/features/product_details/screens/product_details_screen.dart';
-import 'package:amazon/features/screens/widgets/address_box.dart';
-import 'package:amazon/features/search/services/search_services.dart';
-import 'package:amazon/models/product.dart';
+import 'package:EcomGlow/common/widgets/loader.dart';
+import 'package:EcomGlow/features/product_details/screens/product_details_screen.dart';
+import 'package:EcomGlow/features/screens/widgets/address_box.dart';
+import 'package:EcomGlow/features/search/services/search_services.dart';
+import 'package:EcomGlow/models/product.dart';
 import 'package:flutter/material.dart';
 
 import '../../../constants/global_variables.dart';
@@ -95,7 +95,7 @@ class _SearchScreenState extends State<SearchScreen> {
                             width: 1,
                           ),
                         ),
-                        hintText: 'Search Amazon.in',
+                        hintText: 'Search EcomGlow.in',
                         hintStyle: const TextStyle(
                           fontWeight: FontWeight.w500,
                           fontSize: 17,

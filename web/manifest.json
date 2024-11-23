@@ -1,6 +1,6 @@
 {
-    "name": "amazon",
-    "short_name": "amazon",
+    "name": "EcomGlow",
+    "short_name": "EcomGlow",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
